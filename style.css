@@ -1,0 +1,90 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding is included in total width/height */
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.block1 {
+    background-color: #f8c291;
+    height: 20vh; /* 20% of the viewport height */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as per your layout requirements */
+}
+
+.logo {
+    /* Add your logo dimensions */
+    width: 100px;
+    height: auto;
+}
+
+.block2 {
+    background-color: #6a89cc;
+    height: 75vh; /* 75% of the viewport height */
+    flex-wrap: wrap;
+}
+
+.content, .images {
+    flex: 1;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 2rem; /* Adjust size as needed */
+}
+
+.block3 {
+    background-color: #82ccdd;
+    height: 5vh; /* 5% of the viewport height */
+}
+
+input[type=email] {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .block {
+        flex-direction: column;
+    }
+    
+    .header, .content, .images {
+        flex-direction: column;
+    }
+    
+    .header {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .images img, .arrow {
+        margin: 10px 0;
+    }
+}

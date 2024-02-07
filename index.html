@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlateAI</title>
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="block">
-    <h2>Header Text</h2>
-</div>
-<div class="block">
-    <p style="float: left;">Text on the left</p>
-    <img src="image1.jpg" alt="Image 1" style="float: right;">
-    <img src="image2.jpg" alt="Image 2" style="float: right;">
-    <img src="image3.jpg" alt="Image 3" style="float: right;">
-</div>
-<div class="block">
-    <h3>Contact Us</h3>
-    <p>Email: contact@plateai.com</p>
-    <p>Phone: 123-456-7890</p>
-</div>
+    <div class="block block1">
+        <header class="header">
+            <h1>Header Text</h1>
+            <img src="logo.png" alt="Logo" class="logo">
+        </header>
+    </div>
+    <div class="block block2">
+        <section class="content">
+            <h2>Subheader Text</h2>
+            <p>Your paragraph text here.</p>
+            <input type="email" placeholder="Enter your email">
+        </section>
+        <section class="images">
+            <img src="image1.jpg" alt="Image 1">
+            <span class="arrow">→</span>
+            <img src="image2.jpg" alt="Image 2">
+        </section>
+    </div>
+    <div class="block block3">
+        <p>Some text in the last block.</p>
+    </div>
 </body>
 </html>
